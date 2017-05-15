@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "Bladdonkey",
+    "navigationBarTextStyle": "light",
+    "backgroundColor": "#000"
+  }
+}
