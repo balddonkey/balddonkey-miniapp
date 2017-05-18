@@ -1,4 +1,7 @@
 //app.js
+
+var sswidth = 200;
+
 App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
