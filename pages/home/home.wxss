@@ -28,41 +28,52 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
-  position:relative;
-  top: 160px;
+  position:absolute;
+  top: 80px;
+  z-index: 100;
 }
 
  .home-user {
   display: inherit;
   width: 100%;
   flex-direction: column;
-  background-color: red;
-  height: 248rpx;
+  background-color: rgba(255, 255, 255, 0.65);
  }
 
 .home-avatar {
   top: 20rpx;
-  left: 50%;
-  position:relative;
+  position:absolute;
   width: 128rpx;
   height: 128rpx;
   border-radius: 50%;
   margin-left: -64rpx;
   border: 5rpx solid white;
+  z-index: 30;
 }
 
 .home-nickname {
-  position:relative;
-  top: 40rpx;
-  height: 80rpx;
+  position:absolute;
+  width: 250rpx;
+  height: 60rpx;
   color: #FFF;
   margin-bottom: 10rpx;
   font-size: 60rpx;
+  left: 50%;
+  margin-left: -125rpx;
+  z-index: 20;
+  /*background-color: green;*/
 }
 
 .home-sign {
-  color: rgba(255, 255, 255, 0.5);
+  position:absolute;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 32rpx;
+  width: 150rpx;
+  height: 32rpx;
+  left: 50%;
+  margin-left: -70rpx;
+  z-index: 20;
+  /*background-color: gray;*/
 }
 
 .home-separator {
@@ -80,4 +91,22 @@
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 175;
+}
+
+.home-scroll {
+  display: flex;
+}
+
+.home-detail {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 2000rpx;
+  background-color: darkgrey;
+  color: rgba(255, 255, 255, 0.75);
+  margin: auto;
+}
+
+.home-row {
+  width: 100%;
 }

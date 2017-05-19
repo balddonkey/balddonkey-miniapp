@@ -17,6 +17,32 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+function gradient(size, value) {
+  if (size > 0)
+    return value / size;
+  else 
+    return 0;
+}
+
+// 获取屏幕分辨率
+let systemInfo = null;
+function getSystemInfo() {
+  if (systemInfo !== null) {
+    return systemInfo;
+  }
+  let res;
+  try {
+    res = wx.getSystemInfoSync();
+  }
+  catch(e){
+    return null;
+  }
+  systemInfo = res;
+  return systemInfo;
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  gradient: gradient,
+  getSystemInfo: getSystemInfo
 }

@@ -1,35 +1,24 @@
 <view class="home">
   <image class="home-background" mode="aspectFill" src="https://raw.githubusercontent.com/balddonkey/Resource/master/Backgrounds/background-cover.jpg"></image>
+
+
+  <view class="home-panel" style="top: {{head.top}}; opacity: {{head.alpha}}; disabled: true">
+    <view class="home-user" style="height: {{head_avatar.userHeight}}">
+      <image class="home-avatar" style="left: {{head_avatar.avatarLeft}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="home-nickname" style="left: {{head_avatar.nicknameLeft}}; top: {{head_avatar.nicknameTop}}">{{userInfo.nickName}}</text>
+      <text class="home-sign" style="left: {{head_avatar.signLeft}}; top: {{head_avatar.signTop}}">{{detail.sign}}</text>
+    </view>
+    <text class="home-separator" style="opacity: {{head.mottoAlpha}}"></text>
+    <view class="classname" style="opacity: {{head_motto.alpha}}">
+      <text class="home-motto">{{detail.motto}}</text>
+    </view>
+
+  </view>
+
   <scroll-view class="home-scroll" scroll-y="true" bindscroll="bindtouchmove">
-
-    <view class="home-panel">
-      <view class="home-user">
-        <image animation="{{avatarAnimation}}" class="home-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-        <text class="home-nickname">{{userInfo.nickName}}</text>
-        <text class="home-sign">{{detail.sign}}</text>
-      </view>
-      <text class="home-separator"></text>
-      <text class="home-motto">{{detail.motto}}</text>
+    <view class="home-detail" style="top: {{windowHeight}}">
+    <view class="home-row" style="text-align: center">哈哈哈哈，正文屁都没有~~~</view>
     </view>
-    <view class="home-panel">
-      <view class="home-user">
-        <image animation="{{avatarAnimation}}" class="home-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-        <text class="home-nickname">{{userInfo.nickName}}</text>
-      </view>
 
-      <text class="home-sign">{{detail.sign}}</text>
-      <text class="home-separator"></text>
-      <text class="home-motto">{{detail.motto}}</text>
-    </view>
-    <view class="home-panel">
-      <view class="home-user">
-        <image animation="{{avatarAnimation}}" class="home-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-        <text class="home-nickname">{{userInfo.nickName}}</text>
-      </view>
-
-      <text class="home-sign">{{detail.sign}}</text>
-      <text class="home-separator"></text>
-      <text class="home-motto">{{detail.motto}}</text>
-    </view>
   </scroll-view>
 </view>
